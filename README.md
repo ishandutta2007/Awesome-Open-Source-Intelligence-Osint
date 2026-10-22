@@ -1,6 +1,6 @@
 # Awesome-Open-Source-Intelligence-Osint
 
-# Top Open Source Intelligence (OSINT) Tools Ecosystem
+## Top Open Source Intelligence (OSINT) Tools Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Identity Resolution, Breach Correlation & Graph-Based Investigation*  
