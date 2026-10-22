@@ -79,89 +79,89 @@ The following commercial SaaS solutions represent the leading enterprise platfor
 
 Open-source OSINT projects offer transparency, auditable code, local data custody, and independence from commercial vendor constraints.
 
-*Repositories sorted descending by **GitHub Star Count**:*
+*Repositories sorted descending by **GitHub Stars_Count**:*
 
-1. **[Sherlock](https://github.com/sherlock-project/sherlock)** [![GitHub stars](https://img.shields.io/github/stars/sherlock-project/sherlock?style=social&color=white)](https://github.com/sherlock-project/sherlock/stargazers)  
+1. **[Sherlock](https://github.com/sherlock-project/sherlock)** [![GitHub_Stars](https://img.shields.io/github/stars/sherlock-project/sherlock?style=social&color=white)](https://github.com/sherlock-project/sherlock/stargazers)  
    🔍 **The undisputed standard for username enumeration across 400+ social platforms.**  
    * **Installation**: `pip install sherlock-project`  
    * **Key Capabilities**: Blazing fast HTTP concurrency checking account existence across major social networks, forums, and developer sites. Ideal first pass for discovering target handles.
 
-2. **[Maigret](https://github.com/soxoj/maigret)** [![GitHub stars](https://img.shields.io/github/stars/soxoj/maigret?style=social&color=white)](https://github.com/soxoj/maigret/stargazers)  
+2. **[Maigret](https://github.com/soxoj/maigret)** [![GitHub_Stars](https://img.shields.io/github/stars/soxoj/maigret?style=social&color=white)](https://github.com/soxoj/maigret/stargazers)  
    🕵️‍♂️ **Deep profile dossier generator searching across 3,000+ websites.**  
    * **Installation**: `pip install maigret`  
    * **Key Capabilities**: Advanced Sherlock evolutionary fork extracting avatar hashes, bio details, connected social IDs, and generating comprehensive HTML graph reports.
 
-3. **[Social Analyzer](https://github.com/qeeqbox/social-analyzer)** [![GitHub stars](https://img.shields.io/github/stars/qeeqbox/social-analyzer?style=social&color=white)](https://github.com/qeeqbox/social-analyzer/stargazers)  
+3. **[Social Analyzer](https://github.com/qeeqbox/social-analyzer)** [![GitHub_Stars](https://img.shields.io/github/stars/qeeqbox/social-analyzer?style=social&color=white)](https://github.com/qeeqbox/social-analyzer/stargazers)  
    🌐 **API, CLI, and Web App for analyzing profile footprints across 1,000+ platforms.**  
    * **Installation**: `docker run -p 9005:9005 qeeqbox/social-analyzer`  
    * **Key Capabilities**: Multi-layered search including string match, regex profile pattern extraction, web GUI inspection, and exportable JSON outputs.
 
-4. **[SpiderFoot](https://github.com/smicallef/spiderfoot)** [![GitHub stars](https://img.shields.io/github/stars/smicallef/spiderfoot?style=social&color=white)](https://github.com/smicallef/spiderfoot/stargazers)  
+4. **[SpiderFoot](https://github.com/smicallef/spiderfoot)** [![GitHub_Stars](https://img.shields.io/github/stars/smicallef/spiderfoot?style=social&color=white)](https://github.com/smicallef/spiderfoot/stargazers)  
    🕷️ **Automated open-source intelligence reconnaissance engine with 200+ modules.**  
    * **Installation**: `git clone https://github.com/smicallef/spiderfoot && pip install -r requirements.txt`  
    * **Key Capabilities**: Orchestrates queries across DNS, WHOIS, web servers, breach data, and threat feeds against target IPs, domains, emails, and usernames.
 
-5. **[GHunt](https://github.com/mxrch/GHunt)** [![GitHub stars](https://img.shields.io/github/stars/mxrch/GHunt?style=social&color=white)](https://github.com/mxrch/GHunt/stargazers)  
+5. **[GHunt](https://github.com/mxrch/GHunt)** [![GitHub_Stars](https://img.shields.io/github/stars/mxrch/GHunt?style=social&color=white)](https://github.com/mxrch/GHunt/stargazers)  
    📡 **Offensive OSINT framework targeting Google accounts, IDs, and cloud footprints.**  
    * **Installation**: `pipx install ghunt`  
    * **Key Capabilities**: Extracts Google account owner name, Gaia ID, Google Plus photos, active Google services, Maps reviews, calendar public events, and Android device types.
 
-6. **[PhoneInfoga](https://github.com/sundowndev/phoneinfoga)** [![GitHub stars](https://img.shields.io/github/stars/sundowndev/phoneinfoga?style=social&color=white)](https://github.com/sundowndev/phoneinfoga/stargazers)  
+6. **[PhoneInfoga](https://github.com/sundowndev/phoneinfoga)** [![GitHub_Stars](https://img.shields.io/github/stars/sundowndev/phoneinfoga?style=social&color=white)](https://github.com/sundowndev/phoneinfoga/stargazers)  
    📞 **Advanced phone number reconnaissance and metadata extraction.**  
    * **Installation**: `docker run -it -p 5000:5000 sundowndev/phoneinfoga`  
    * **Key Capabilities**: Validates international number formats, identifies carrier, country, and line type (VoIP/Mobile/Landline), and automates search engine dorking footprints.
 
-7. **[theHarvester](https://github.com/laramies/theHarvester)** [![GitHub stars](https://img.shields.io/github/stars/laramies/theHarvester?style=social&color=white)](https://github.com/laramies/theHarvester/stargazers)  
+7. **[theHarvester](https://github.com/laramies/theHarvester)** [![GitHub_Stars](https://img.shields.io/github/stars/laramies/theHarvester?style=social&color=white)](https://github.com/laramies/theHarvester/stargazers)  
    🌾 **Domain-focused email, employee name, subdomain, and host reconnaissance.**  
    * **Installation**: `git clone https://github.com/laramies/theHarvester && pip install -r requirements/base.txt`  
    * **Key Capabilities**: Collects internet attack surface assets by parsing search engine queries, PGP servers, Certificate Transparency logs, and public APIs.
 
-8. **[OWASP Amass](https://github.com/owasp-amass/amass)** [![GitHub stars](https://img.shields.io/github/stars/owasp-amass/amass?style=social&color=white)](https://github.com/owasp-amass/amass/stargazers)  
+8. **[OWASP Amass](https://github.com/owasp-amass/amass)** [![GitHub_Stars](https://img.shields.io/github/stars/owasp-amass/amass?style=social&color=white)](https://github.com/owasp-amass/amass/stargazers)  
    🛡️ **In-depth network attack surface mapping and external asset discovery.**  
    * **Installation**: `go install -v github.com/owasp-amass/amass/v4/...@master`  
    * **Key Capabilities**: Industry standard for enterprise external perimeter discovery, recursive DNS brute forcing, BGP routing analysis, and active graph graph database storage.
 
-9. **[Holehe](https://github.com/megadose/holehe)** [![GitHub stars](https://img.shields.io/github/stars/megadose/holehe?style=social&color=white)](https://github.com/megadose/holehe/stargazers)  
+9. **[Holehe](https://github.com/megadose/holehe)** [![GitHub_Stars](https://img.shields.io/github/stars/megadose/holehe?style=social&color=white)](https://github.com/megadose/holehe/stargazers)  
    📧 **Email-to-registered-account enumeration without notifying target users.**  
    * **Installation**: `pip install holehe`  
    * **Key Capabilities**: Leverages password-reset forgot-password logic across 120+ top web services (GitHub, Twitter, Spotify, Discord) to confirm account registration.
 
-10. **[Photon](https://github.com/s0md3v/Photon)** [![GitHub stars](https://img.shields.io/github/stars/s0md3v/Photon?style=social&color=white)](https://github.com/s0md3v/Photon/stargazers)  
+10. **[Photon](https://github.com/s0md3v/Photon)** [![GitHub_Stars](https://img.shields.io/github/stars/s0md3v/Photon?style=social&color=white)](https://github.com/s0md3v/Photon/stargazers)  
     ⚡ **Hyper-fast, multi-threaded OSINT web crawler and data extractor.**  
     * **Installation**: `git clone https://github.com/s0md3v/Photon && pip install -r requirements.txt`  
     * **Key Capabilities**: Crawls target URLs at high speeds to harvest emails, social media handles, internal URLs, files (PDFs, docs), and API endpoints.
 
-11. **[Sublist3r](https://github.com/aboul3la/Sublist3r)** [![GitHub stars](https://img.shields.io/github/stars/aboul3la/Sublist3r?style=social&color=white)](https://github.com/aboul3la/Sublist3r/stargazers)  
+11. **[Sublist3r](https://github.com/aboul3la/Sublist3r)** [![GitHub_Stars](https://img.shields.io/github/stars/aboul3la/Sublist3r?style=social&color=white)](https://github.com/aboul3la/Sublist3r/stargazers)  
     🔎 **Fast subdomain enumeration tool leveraging passive search engine indexing.**  
     * **Installation**: `pip install sublist3r`  
     * **Key Capabilities**: Queries Baidu, Yahoo, Google, Bing, Ask, Netcraft, and Virustotal to uncover hidden subdomains and expanded infrastructure perimeters.
 
-12. **[Blackbird](https://github.com/antoniaci/blackbird)** [![GitHub stars](https://img.shields.io/github/stars/antoniaci/blackbird?style=social&color=white)](https://github.com/antoniaci/blackbird/stargazers)  
+12. **[Blackbird](https://github.com/antoniaci/blackbird)** [![GitHub_Stars](https://img.shields.io/github/stars/antoniaci/blackbird?style=social&color=white)](https://github.com/antoniaci/blackbird/stargazers)  
     🦅 **High-speed account search across 500+ platforms by username and email.**  
     * **Installation**: `pip install -r requirements.txt`  
     * **Key Capabilities**: Async Python lookup, built-in metadata scraping, exportable visual web report, and automated PDF dossier export.
 
-13. **[Recon-ng](https://github.com/lanmaster53/recon-ng)** [![GitHub stars](https://img.shields.io/github/stars/lanmaster53/recon-ng?style=social&color=white)](https://github.com/lanmaster53/recon-ng/stargazers)  
+13. **[Recon-ng](https://github.com/lanmaster53/recon-ng)** [![GitHub_Stars](https://img.shields.io/github/stars/lanmaster53/recon-ng?style=social&color=white)](https://github.com/lanmaster53/recon-ng/stargazers)  
     🧰 **Full-featured modular reconnaissance framework with database persistence.**  
     * **Installation**: `git clone https://github.com/lanmaster53/recon-ng && pip install -r REQUIREMENTS`  
     * **Key Capabilities**: Command structure mirroring Metasploit, modular marketplace, built-in SQLite backend, and standardized reporting transforms.
 
-14. **[OpenOSINT](https://github.com/OpenOSINT/OpenOSINT)** [![GitHub stars](https://img.shields.io/github/stars/OpenOSINT/OpenOSINT?style=social&color=white)](https://github.com/OpenOSINT/OpenOSINT/stargazers)  
+14. **[OpenOSINT](https://github.com/OpenOSINT/OpenOSINT)** [![GitHub_Stars](https://img.shields.io/github/stars/OpenOSINT/OpenOSINT?style=social&color=white)](https://github.com/OpenOSINT/OpenOSINT/stargazers)  
     🤖 **AI-augmented unified OSINT framework unifying multiple standalone CLI utilities.**  
     * **Installation**: `pip install openosint`  
     * **Key Capabilities**: Bundles Sherlock, Holehe, theHarvester, and PhoneInfoga into a cohesive interactive REPL console with a modern local web UI.
 
-15. **[OpenSanctions](https://github.com/opensanctions/opensanctions)** [![GitHub stars](https://img.shields.io/github/stars/opensanctions/opensanctions?style=social&color=white)](https://github.com/opensanctions/opensanctions/stargazers)  
+15. **[OpenSanctions](https://github.com/opensanctions/opensanctions)** [![GitHub_Stars](https://img.shields.io/github/stars/opensanctions/opensanctions?style=social&color=white)](https://github.com/opensanctions/opensanctions/stargazers)  
     🏛️ **The global open database of sanctions, PEPs, and watchlist entities.**  
     * **Installation**: `pip install opensanctions` / `pip install yente-client`  
     * **Key Capabilities**: Aggregates 460+ global government watchlists (2M+ entities) updated 4 times daily into FollowTheMoney graph data models; includes an MCP server for AI agent workflows.
 
-16. **[Metagoofil](https://github.com/opsdisk/metagoofil)** [![GitHub stars](https://img.shields.io/github/stars/opsdisk/metagoofil?style=social&color=white)](https://github.com/opsdisk/metagoofil/stargazers)  
+16. **[Metagoofil](https://github.com/opsdisk/metagoofil)** [![GitHub_Stars](https://img.shields.io/github/stars/opsdisk/metagoofil?style=social&color=white)](https://github.com/opsdisk/metagoofil/stargazers)  
     📄 **Metadata harvesting tool extracting usernames, software versions, and paths from public documents.**  
     * **Installation**: `git clone https://github.com/opsdisk/metagoofil && pip install -r requirements.txt`  
     * **Key Capabilities**: Searches Google for target domain PDFs, DOCX, XLSX, and PPTX files, downloads them, and inspects EXIF metadata for internal usernames and workstations.
 
-17. **[EyeOfWeb](https://github.com/MehmetYukselSekeroglu/eye_of_web)** [![GitHub stars](https://img.shields.io/github/stars/MehmetYukselSekeroglu/eye_of_web?style=social&color=white)](https://github.com/MehmetYukselSekeroglu/eye_of_web/stargazers)  
+17. **[EyeOfWeb](https://github.com/MehmetYukselSekeroglu/eye_of_web)** [![GitHub_Stars](https://img.shields.io/github/stars/MehmetYukselSekeroglu/eye_of_web?style=social&color=white)](https://github.com/MehmetYukselSekeroglu/eye_of_web/stargazers)  
     👤 **Open-source facial intelligence and face similarity search platform.**  
     * **Installation**: `docker compose up --build`  
     * **Key Capabilities**: InsightFace AntelopeV2 model generating 512-dim facial embeddings, Milvus vector database indexing for millisecond ANN search across billions of faces, and full local data custody.
@@ -208,7 +208,7 @@ We actively welcome contributions from the OSINT, threat intelligence, and cyber
 2. 🌿 **Create a new branch**: `git checkout -b feature/add-osint-tool`.
 3. 📝 **Add or update the tool**:
    * Add the link, description, and key capabilities.
-   * Ensure open-source entries include the proper Shields.io badge: `[![GitHub stars](https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white)](https://github.com/<owner>/<repo>/stargazers)`
+   * Ensure open-source entries include the proper Shields.io badge: `[![GitHub_Stars](https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white)](https://github.com/<owner>/<repo>/stargazers)`
    * Verify commercial SaaS entries adhere to transparent pricing and verified company size metrics.
 4. 🚀 **Commit and submit a Pull Request** with a concise summary.
 
