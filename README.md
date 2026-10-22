@@ -30,6 +30,7 @@
 - [💻 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🛠️ Investigation Architecture & Custom Stacks](#️-investigation-architecture--custom-stacks)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Community](#-support--community)
 - [⚖️ Legal Compliance & Ethical Disclaimer](#️-legal-compliance--ethical-disclaimer)
 - [📈 Star History](#-star-history)
 
@@ -222,6 +223,26 @@ We actively welcome contributions from the OSINT, threat intelligence, and cyber
 * **Ethical Boundaries**: Doxxing, harassment, unauthorized stalking, and violating individual privacy rights are illegal and unethical.
 * **Service Terms**: Scraping and automated querying may violate specific service Terms of Service (ToS); users must understand their local statutory jurisdictions (e.g., GDPR, CFAA, KVKK).
 * **Zero Liability**: The maintainers and contributors assume no liability for misuse of any tools or datasets listed herein. Always adhere to legal counsel and authorized rules of engagement.
+
+---
+
+## 💖 Support & Community
+
+Thank you for exploring and utilizing this curated Open Source Intelligence (OSINT) resource! If this project assisted your investigations, red teaming, security research, or compliance workflow, please consider showing your support:
+
+* ⭐ **Star this repository** to help other security researchers and investigators discover it.
+* 🍴 **Fork the repo** to contribute new OSINT tools, update platform pricing, or suggest improvements.
+* 📢 **Share with peers**, your threat intelligence team, or on your social/professional networks.
+* ☕ **Buy Me a Coffee / Sponsor**: Consider supporting ongoing maintenance and curation via the **[GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)**. Every contribution directly empowers independent open-source cybersecurity curation!
+
+<p align="left">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github-sponsors&logoColor=white" alt="GitHub Sponsors" />
+  </a>
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
+  </a>
+</p>
 
 ---
 
