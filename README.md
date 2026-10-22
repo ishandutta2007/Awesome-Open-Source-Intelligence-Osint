@@ -1,91 +1,236 @@
-# Awesome-Open-Source-Intelligence-Osint
+<div align="center">
 
-## Top Open Source Intelligence (OSINT) Tools Ecosystem
+# 🕵️‍♂️ Awesome Open Source Intelligence (OSINT)
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Identity Resolution, Breach Correlation & Graph-Based Investigation*  
-**Last updated: March 2026**
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Open-Source-Intelligence-Osint/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Open-Source-Intelligence-Osint?style=flat-square&logo=github&color=yellow" alt="Repo Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Open-Source-Intelligence-Osint/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Open-Source-Intelligence-Osint?style=flat-square&logo=github&color=blue" alt="Repo Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Open-Source-Intelligence-Osint/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Open-Source-Intelligence-Osint?style=flat-square" alt="Issues"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Open-Source-Intelligence-Osint/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Open Source Intelligence (OSINT)**. These tools help investigators, journalists, and security teams collect and correlate publicly available information — usernames, emails, phone numbers, domains, breach data, and social media footprints — turning scattered data points into actionable intelligence.
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Open Source Intelligence (OSINT) Banner" width="100%">
+</p>
 
-**Examples** include OpenSanctions, Sherlock, Maigret, Holehe, PhoneInfoga, theHarvester, SpiderFoot, and EyeOfWeb (the category leaders).
+**A curated, SEO-indexed directory of leading commercial SaaS platforms and premier open-source GitHub projects for Open Source Intelligence (OSINT), attack surface reconnaissance, digital footprints, and identity correlation.**
 
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, key-free collection, and transparent provenance tracking — ideal for researchers who need repeatable, auditable investigations without uploading targets to a commercial black box.
+*Last updated: 2026 • Curated for threat intelligence analysts, cyber investigators, privacy researchers, and compliance teams.*
 
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-- **Clearview AI** — Commercial facial recognition search engine built on scraped web images. Proprietary, law-enforcement focused, and legally contested in multiple jurisdictions. **Best avoided** for organizations without explicit legal authorization and privacy counsel.
-
-- **LexisNexis** — Enterprise risk and identity resolution platform with public records, corporate data, and due diligence databases. Subscription-based with significant licensing costs.
-
-- **Thomson Reuters Special Services** — Investigative research platform combining public records, news archives, and corporate data for financial crime and due diligence investigations.
-
-- **ShadowDragon** — Commercial OSINT platform with social media monitoring, breach data, and identity resolution tools for law enforcement and security teams.
-
-- **Social Links** — Commercial OSINT platform specializing in social media analysis, link analysis, and graph visualization for investigations.
-
-- **Babel Street** — Enterprise OSINT and risk intelligence platform with multilingual social media monitoring and entity resolution.
-
-## Open-Source GitHub Projects
-
-- **[OpenSanctions](https://www.opensanctions.org/)**  
-  **The open database of sanctions, watchlists, and politically exposed persons** — the most transparent source in the category . **Aggregates 469 global sources** including official sanctions lists, PEP data, and entities of criminal interest into a **clean, de-duplicated dataset** with **1,995,517 entities in the default distribution** . **Updates four times per day**, with every stated value linked to a public source . **FollowTheMoney data model** designed for graph technology to understand financial crime . **Free for non-commercial use**; commercial users require a data license or screening API . **SDK, CLI, and MCP server** available via `yente-client` for agentic compliance workflows . **Best for journalists, investigators, and compliance teams** needing auditable sanctions and PEP screening without vendor lock-in.
-
-- **[Sherlock](https://github.com/sherlock-project/sherlock)**  
-  **The standard username enumeration tool** — finds accounts across **400+ social networks** with a single command . **`pip install sherlock-project`** then `sherlock username` . **The fastest first pass** for digital footprint discovery — if a target uses the same handle everywhere, this finds it in seconds . **Integrated into larger toolkits** including OpenOSINT and TraceForge . **Best for quick username sweeps** before deeper investigation.
-
-- **[Maigret](https://github.com/soxoj/maigret)**  
-  **The advanced Sherlock fork covering 3000+ sites** — the depth option after Sherlock's breadth . **`pip install maigret`** then `maigret username` . **Also integrated into OpenOSINT and TraceForge** . **Best for thorough username investigation** where Sherlock's 400 sites aren't enough.
-
-- **[Holehe](https://github.com/megadose/holehe)**  
-  **Email-to-account enumeration** — checks which online services are registered to an email address without alerting the target . **`pip install holehe`** then `holehe target@example.com` . **Example output** shows Spotify, WordPress, Gravatar, and Office365 registrations . **The standard email OSINT tool** and a core component of OpenOSINT's `search_email` [citation:9].
-
-- **[PhoneInfoga](https://github.com/sundowndev/phoneinfoga)**  
-  **Phone number reconnaissance** — carrier, country, and line type detection without requiring paid APIs . **Core component of OpenOSINT's `search_phone`** [citation:9]. **For deeper phone investigation**, **PhoneOsint** wraps PhoneInfoga alongside Truecaller lookup, Telegram registration checks, breach hits, and an **exposure score (0–100)** — with batch mode, JSON/CSV/HTML/PDF export, and a `--diff` flag to show what changed since the last scan [citation:2].
-
-- **[theHarvester](https://github.com/laramies/theHarvester)**  
-  **Email, subdomain, host, and employee name harvester** for a given domain . **Integrates with multiple public sources** including search engines and certificate transparency logs . **Core component of TraceForge's domain intelligence and email breach modules** .
-
-- **[SpiderFoot](https://github.com/smicallef/spiderfoot)**  
-  **Automated OSINT reconnaissance** — 200+ modules for threat intelligence, DNS, WHOIS, and social media enumeration . **Targets: IPs, domains, emails, names, phone numbers, and usernames** . **Included in PhoneOsint's install script** for automated setup [citation:2]. **Best for broad automated reconnaissance** when you want a single tool to cover many data sources.
-
-- **[EyeOfWeb](https://github.com/MehmetYukselSekeroglu/eye_of_web)**  
-  **Open-source facial intelligence and face search platform** — the closest open-source alternative to commercial face search engines . **Hybrid database architecture**: PostgreSQL for structured metadata and **Milvus for high-dimensional vector embeddings** . **InsightFace AntelopeV2 model** generates 512-dimensional embeddings, indexed for **millisecond-level ANN searches across billions of faces** . **Supports 1:N identity searches, 1:1 comparisons, and social network analysis** . **JWT authentication, bcrypt password hashing, CSRF protection, and rate limiting** . **Docker Compose deployment**; recommended hardware: **8+ core CPU with AVX2, 16 GB+ RAM, 250 GB+ SSD** . **MIT licensed** with a strong legal disclaimer emphasizing academic research and legal security simulations only . **Limitations**: CPU-only Docker image by default; last commit 7 months ago with 0 stars in the last 30 days as of the SourcePulse listing [citation:10]. **Best for researchers** needing self-hosted facial intelligence with full data custody.
-
-### Additional Strong Open-Source Options
-
-- **OpenOSINT** — AI-powered OSINT toolkit wrapping Holehe, Sherlock, theHarvester, PhoneInfoga, and more into a single CLI with an interactive REPL and web UI. `pip install openosint` [citation:9].
-- **TraceForge** — Case-workspace OSINT framework with 7 investigation modules (image forensics, network/PCAP, identity/social, email/breach, domain/DNS) and 152 installable catalog tools. MIT licensed .
-- **Umbra** — Graph-first OSINT with **40 plugin collectors, most key-free**, entity graph across 21 types, and **confidence scoring with provenance** for every claim. Local-first SQLite storage. MIT licensed [citation:12].
-- **SpectraGraph** — Visual investigation platform with a **graph-first workspace**, modular live transforms, and Neo4j backend for relationship mapping. Docker-based .
-- **Spyder OSINT** — Universal OSINT research tool covering phone, IP, social media, email, name, address, domain, license plate, and username lookups .
-
-**Frameworks for building custom systems**: Combine **Sherlock** or **Maigret** for username enumeration, **Holehe** for email-to-account discovery, **PhoneInfoga** or **PhoneOsint** for phone investigation, **theHarvester** for domain reconnaissance, **SpiderFoot** for automated multi-source collection, **OpenSanctions** for sanctions and PEP screening, and **EyeOfWeb** for self-hosted facial intelligence — to build an OSINT stack tailored to your investigation scope, data custody requirements, and legal authorization basis.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- **OSINT tools must only be used for lawful purposes** — investigating your own assets, conducting authorized security research, or gathering information on public figures and entities within legal boundaries. **Stalking, harassment, doxxing, and unauthorized access to private information are illegal and unethical.** **EyeOfWeb's developers explicitly disclaim liability for illegal or unethical use**, particularly concerning privacy laws like GDPR and KVKK [citation:10]. **PhoneOsint's Aadhaar and PayPal sections are informational-only placeholders** — no free/legal automated lookup exists for either [citation:2]. **OpenSanctions is free for non-commercial use**; commercial users must acquire a license [citation:5]. **Absence of a finding is not a clean result** — Umbra's documentation explicitly warns that when a source is unreachable it says so rather than reporting nothing found [citation:12].
-- Self-hosted open-source solutions require proper authorization documentation, data retention policies, and awareness that OSINT collection can violate platform terms of service even when the underlying data is public.
+</div>
 
 ---
 
-**Made for investigators, journalists, security researchers, and compliance teams conducting lawful open-source intelligence gathering.**
-Let's make OSINT more open, auditable, and legally defensible.
+## 📑 Table of Contents
+- [🌟 Overview & SEO Taxonomy](#-overview--seo-taxonomy)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 Enterprise SaaS & Hosted Platforms](#-enterprise-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Investigation Architecture & Custom Stacks](#️-investigation-architecture--custom-stacks)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚖️ Legal Compliance & Ethical Disclaimer](#️-legal-compliance--ethical-disclaimer)
+- [📈 Star History](#-star-history)
+
+---
+
+## 🌟 Overview & SEO Taxonomy
+
+**Open Source Intelligence (OSINT)** is the systematic discipline of gathering, analyzing, and synthesizing publicly accessible data—such as social media profiles, domain registrations, breach leaks, DNS records, public court records, sanctions watchlists, and satellite metadata—into actionable threat intelligence and evidence.
+
+### 🔍 Key Investigation Domains
+* **Identity Resolution & Enumeration**: Cross-platform username detection, email-to-service validation, phone carrier tracing, and alias mapping.
+* **Attack Surface Management & Reconnaissance**: Subdomain brute-forcing, certificate transparency tracking, port telemetry, and web crawler harvesting.
+* **Breach & Threat Correlation**: Ingestion of compromised credentials, past breach telemetry, and dark web forum exposures.
+* **Graph & Link Analytics**: Visualizing complex entity networks, shell companies, PEP relationships, and criminal associations.
+* **Facial Intelligence & Multimodal AI**: High-dimensional vector searches across publicly indexed images and social video platforms.
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The global **Open Source Intelligence (OSINT)** market was valued between **$12.1 Billion and $19.5 Billion in 2025** and is projected to expand to **$21 Billion–$22.3 Billion in 2026**, on track to eclipse **$36.5 Billion by 2032** at an impressive Compound Annual Growth Rate (CAGR) of **15% to 26%**. This swift expansion is accelerated by escalating geopolitical tensions, the proliferation of state-sponsored cyber warfare, and the integration of automated Generative AI and vector search into intelligence operations.
+
+In terms of structure, the sector is **moderately to highly fragmented** rather than a winner-take-all monopoly. While diversified multi-billion dollar information giants like **Thomson Reuters** and **RELX (LexisNexis)** dominate public-records and legal due diligence, specialized intelligence vendors (such as **Maltego**, **Babel Street**, **Clearview AI**, and **Social Links**) capture defense, cyber forensics, and dark web niches. Concurrently, a vibrant community of **open-source CLI frameworks** continuously decentralizes core collection methodologies, preventing singular vendor lock-in.
+
+---
+
+## 🏢 Enterprise SaaS & Hosted Platforms
+
+The following commercial SaaS solutions represent the leading enterprise platforms in OSINT, identity resolution, risk screening, and social graph analysis. 
+
+*Table sorted descending by **Company Size (Revenue / Valuation)**:*
+
+| 🏢 Platform / Vendor | 🎯 Core OSINT Focus & Capabilities | 📈 Company Size (Revenue / Valuation) | 💵 Starting Tier Pricing | 🎁 Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Thomson Reuters CLEAR](https://www.thomsonreuters.com/en/products-services/risk-fraud-intelligence/clear.html)** | Enterprise public records aggregation, criminal history, corporate ownership, and real-time risk scoring for fraud and compliance. | **~$80.5 Billion Market Cap**<br>*(~$7.0B Annual Revenue)* | **$45.00 / user / month**<br>*(Baseline add-on tier; standard investigative seats start at ~$150.00 / user / month via annual contract)* | **0 Days Free Tier**<br>*(No self-serve free plan; 7-day to 14-day supervised proof-of-concept trial available only for vetted enterprise & government agencies post-sales demo)* |
+| **[LexisNexis Accurint](https://risk.lexisnexis.com/products/accurint-for-government)** | Billions of public and proprietary records, identity verification, deep skip-tracing, and Relavint™ graph link analysis. | **~$78.0 Billion Market Cap (RELX)**<br>*(~$4.5B Annual Revenue in Risk Solutions)* | **$80.00 - $100.00 / user / month**<br>*(Flat-rate entry; or pay-per-search from $0.35/query with a $100.00/month account minimum commitment)* | **0 Days Free Tier**<br>*(No permanent free tier; 7-day trial with capped lookups [10–25 queries] granted exclusively upon strict verification of permissible statutory purpose)* |
+| **[Maltego](https://www.maltego.com/)** | Interactive graph-based link analysis, entity transform hub (Shodan, AlienVault, Whois, social networks), and attack surface mapping. | **~$150 Million+ Valuation**<br>*(~$25M+ ARR; backed by Charlesbank)* | **€999.00 / user / year**<br>*(~$89.00 / month billed annually for Maltego Pro)* | **Free Forever Tier (Maltego CE)**<br>*(Community Edition is 100% free forever; limited to max 12 entities per transform return and 10,000 entities per graph for non-commercial use)* |
+| **[Clearview AI](https://www.clearview.ai/)** | Algorithmic facial recognition search engine indexed against 50+ billion scraped surface-web images for suspect identification. | **~$130 Million Valuation (Series B)**<br>*(~$8.4M Annual Revenue)* | **$6,500.00 / year**<br>*(~$541.67 / month for entry-level single-seat municipal agency license)* | **0 Days Free Tier**<br>*(No public free plan; 14-day to 30-day restricted pilot evaluation with capped searches provided strictly to verified law enforcement & public safety personnel)* |
+| **[Babel Street Insights](https://www.babelstreet.com/)** *(formerly Babel X)* | Cross-lingual threat intelligence, AI-driven entity and name matching (Rosette), and persistent social media monitoring across 30+ languages. | **~$100 Million+ Valuation**<br>*(~$31.7M Annual Revenue)* | **$1,000.00 / user / month**<br>*($12,000.00 / year GSA base seat bundling 300 concurrent terms & 1M docs/month)* | **5-Day Free Trial (Babel Street Match)**<br>*(5-day access to AI name matching engine with pre-loaded OFAC SDN dataset; 0-day free tier for core Babel Insights)* |
+| **[Social Links](https://sociallinks.io/)** *(SL Pro & Crimewall)* | Deep social media profiling (500+ sources), dark web threat monitoring, blockchain transaction tracing, and Maltego integration transforms. | **~$25 Million - $35 Million Valuation**<br>*(~$7.0M ARR; venture-backed)* | **€4,000.00 / user / year**<br>*(~$360.00 / month billed annually for SL Professional)* | **Free Forever Tier (Social Links CE)**<br>*(Social Links Community Edition gives ~5% features, capped at 12–24 results per transform for non-commercial research; or 14-day Pro trial with 500 transforms)* |
+| **[ShadowDragon](https://shadowdragon.io/)** *(Horizon & SocialNet)* | Real-time social cyber footprint tracking, alias correlation, threat actor pattern of life, and breach event monitoring. | **~$15 Million - $25 Million Valuation**<br>*(~$5.0M Annual Revenue)* | **£5,500.00 / user / year**<br>*(~$590.00 / month billed annually for single-seat Horizon + SocialNet license)* | **0 Days Free Tier**<br>*(No core software free tier; provides free standalone web dork utilities forever; offers 7-day to 14-day supervised trial for accredited corporate security teams)* |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+Open-source OSINT projects offer transparency, auditable code, local data custody, and independence from commercial vendor constraints.
+
+*Repositories sorted descending by **GitHub Star Count**:*
+
+1. **[Sherlock](https://github.com/sherlock-project/sherlock)** [![GitHub stars](https://img.shields.io/github/stars/sherlock-project/sherlock?style=social&color=white)](https://github.com/sherlock-project/sherlock/stargazers)  
+   🔍 **The undisputed standard for username enumeration across 400+ social platforms.**  
+   * **Installation**: `pip install sherlock-project`  
+   * **Key Capabilities**: Blazing fast HTTP concurrency checking account existence across major social networks, forums, and developer sites. Ideal first pass for discovering target handles.
+
+2. **[Maigret](https://github.com/soxoj/maigret)** [![GitHub stars](https://img.shields.io/github/stars/soxoj/maigret?style=social&color=white)](https://github.com/soxoj/maigret/stargazers)  
+   🕵️‍♂️ **Deep profile dossier generator searching across 3,000+ websites.**  
+   * **Installation**: `pip install maigret`  
+   * **Key Capabilities**: Advanced Sherlock evolutionary fork extracting avatar hashes, bio details, connected social IDs, and generating comprehensive HTML graph reports.
+
+3. **[Social Analyzer](https://github.com/qeeqbox/social-analyzer)** [![GitHub stars](https://img.shields.io/github/stars/qeeqbox/social-analyzer?style=social&color=white)](https://github.com/qeeqbox/social-analyzer/stargazers)  
+   🌐 **API, CLI, and Web App for analyzing profile footprints across 1,000+ platforms.**  
+   * **Installation**: `docker run -p 9005:9005 qeeqbox/social-analyzer`  
+   * **Key Capabilities**: Multi-layered search including string match, regex profile pattern extraction, web GUI inspection, and exportable JSON outputs.
+
+4. **[SpiderFoot](https://github.com/smicallef/spiderfoot)** [![GitHub stars](https://img.shields.io/github/stars/smicallef/spiderfoot?style=social&color=white)](https://github.com/smicallef/spiderfoot/stargazers)  
+   🕷️ **Automated open-source intelligence reconnaissance engine with 200+ modules.**  
+   * **Installation**: `git clone https://github.com/smicallef/spiderfoot && pip install -r requirements.txt`  
+   * **Key Capabilities**: Orchestrates queries across DNS, WHOIS, web servers, breach data, and threat feeds against target IPs, domains, emails, and usernames.
+
+5. **[GHunt](https://github.com/mxrch/GHunt)** [![GitHub stars](https://img.shields.io/github/stars/mxrch/GHunt?style=social&color=white)](https://github.com/mxrch/GHunt/stargazers)  
+   📡 **Offensive OSINT framework targeting Google accounts, IDs, and cloud footprints.**  
+   * **Installation**: `pipx install ghunt`  
+   * **Key Capabilities**: Extracts Google account owner name, Gaia ID, Google Plus photos, active Google services, Maps reviews, calendar public events, and Android device types.
+
+6. **[PhoneInfoga](https://github.com/sundowndev/phoneinfoga)** [![GitHub stars](https://img.shields.io/github/stars/sundowndev/phoneinfoga?style=social&color=white)](https://github.com/sundowndev/phoneinfoga/stargazers)  
+   📞 **Advanced phone number reconnaissance and metadata extraction.**  
+   * **Installation**: `docker run -it -p 5000:5000 sundowndev/phoneinfoga`  
+   * **Key Capabilities**: Validates international number formats, identifies carrier, country, and line type (VoIP/Mobile/Landline), and automates search engine dorking footprints.
+
+7. **[theHarvester](https://github.com/laramies/theHarvester)** [![GitHub stars](https://img.shields.io/github/stars/laramies/theHarvester?style=social&color=white)](https://github.com/laramies/theHarvester/stargazers)  
+   🌾 **Domain-focused email, employee name, subdomain, and host reconnaissance.**  
+   * **Installation**: `git clone https://github.com/laramies/theHarvester && pip install -r requirements/base.txt`  
+   * **Key Capabilities**: Collects internet attack surface assets by parsing search engine queries, PGP servers, Certificate Transparency logs, and public APIs.
+
+8. **[OWASP Amass](https://github.com/owasp-amass/amass)** [![GitHub stars](https://img.shields.io/github/stars/owasp-amass/amass?style=social&color=white)](https://github.com/owasp-amass/amass/stargazers)  
+   🛡️ **In-depth network attack surface mapping and external asset discovery.**  
+   * **Installation**: `go install -v github.com/owasp-amass/amass/v4/...@master`  
+   * **Key Capabilities**: Industry standard for enterprise external perimeter discovery, recursive DNS brute forcing, BGP routing analysis, and active graph graph database storage.
+
+9. **[Holehe](https://github.com/megadose/holehe)** [![GitHub stars](https://img.shields.io/github/stars/megadose/holehe?style=social&color=white)](https://github.com/megadose/holehe/stargazers)  
+   📧 **Email-to-registered-account enumeration without notifying target users.**  
+   * **Installation**: `pip install holehe`  
+   * **Key Capabilities**: Leverages password-reset forgot-password logic across 120+ top web services (GitHub, Twitter, Spotify, Discord) to confirm account registration.
+
+10. **[Photon](https://github.com/s0md3v/Photon)** [![GitHub stars](https://img.shields.io/github/stars/s0md3v/Photon?style=social&color=white)](https://github.com/s0md3v/Photon/stargazers)  
+    ⚡ **Hyper-fast, multi-threaded OSINT web crawler and data extractor.**  
+    * **Installation**: `git clone https://github.com/s0md3v/Photon && pip install -r requirements.txt`  
+    * **Key Capabilities**: Crawls target URLs at high speeds to harvest emails, social media handles, internal URLs, files (PDFs, docs), and API endpoints.
+
+11. **[Sublist3r](https://github.com/aboul3la/Sublist3r)** [![GitHub stars](https://img.shields.io/github/stars/aboul3la/Sublist3r?style=social&color=white)](https://github.com/aboul3la/Sublist3r/stargazers)  
+    🔎 **Fast subdomain enumeration tool leveraging passive search engine indexing.**  
+    * **Installation**: `pip install sublist3r`  
+    * **Key Capabilities**: Queries Baidu, Yahoo, Google, Bing, Ask, Netcraft, and Virustotal to uncover hidden subdomains and expanded infrastructure perimeters.
+
+12. **[Blackbird](https://github.com/antoniaci/blackbird)** [![GitHub stars](https://img.shields.io/github/stars/antoniaci/blackbird?style=social&color=white)](https://github.com/antoniaci/blackbird/stargazers)  
+    🦅 **High-speed account search across 500+ platforms by username and email.**  
+    * **Installation**: `pip install -r requirements.txt`  
+    * **Key Capabilities**: Async Python lookup, built-in metadata scraping, exportable visual web report, and automated PDF dossier export.
+
+13. **[Recon-ng](https://github.com/lanmaster53/recon-ng)** [![GitHub stars](https://img.shields.io/github/stars/lanmaster53/recon-ng?style=social&color=white)](https://github.com/lanmaster53/recon-ng/stargazers)  
+    🧰 **Full-featured modular reconnaissance framework with database persistence.**  
+    * **Installation**: `git clone https://github.com/lanmaster53/recon-ng && pip install -r REQUIREMENTS`  
+    * **Key Capabilities**: Command structure mirroring Metasploit, modular marketplace, built-in SQLite backend, and standardized reporting transforms.
+
+14. **[OpenOSINT](https://github.com/OpenOSINT/OpenOSINT)** [![GitHub stars](https://img.shields.io/github/stars/OpenOSINT/OpenOSINT?style=social&color=white)](https://github.com/OpenOSINT/OpenOSINT/stargazers)  
+    🤖 **AI-augmented unified OSINT framework unifying multiple standalone CLI utilities.**  
+    * **Installation**: `pip install openosint`  
+    * **Key Capabilities**: Bundles Sherlock, Holehe, theHarvester, and PhoneInfoga into a cohesive interactive REPL console with a modern local web UI.
+
+15. **[OpenSanctions](https://github.com/opensanctions/opensanctions)** [![GitHub stars](https://img.shields.io/github/stars/opensanctions/opensanctions?style=social&color=white)](https://github.com/opensanctions/opensanctions/stargazers)  
+    🏛️ **The global open database of sanctions, PEPs, and watchlist entities.**  
+    * **Installation**: `pip install opensanctions` / `pip install yente-client`  
+    * **Key Capabilities**: Aggregates 460+ global government watchlists (2M+ entities) updated 4 times daily into FollowTheMoney graph data models; includes an MCP server for AI agent workflows.
+
+16. **[Metagoofil](https://github.com/opsdisk/metagoofil)** [![GitHub stars](https://img.shields.io/github/stars/opsdisk/metagoofil?style=social&color=white)](https://github.com/opsdisk/metagoofil/stargazers)  
+    📄 **Metadata harvesting tool extracting usernames, software versions, and paths from public documents.**  
+    * **Installation**: `git clone https://github.com/opsdisk/metagoofil && pip install -r requirements.txt`  
+    * **Key Capabilities**: Searches Google for target domain PDFs, DOCX, XLSX, and PPTX files, downloads them, and inspects EXIF metadata for internal usernames and workstations.
+
+17. **[EyeOfWeb](https://github.com/MehmetYukselSekeroglu/eye_of_web)** [![GitHub stars](https://img.shields.io/github/stars/MehmetYukselSekeroglu/eye_of_web?style=social&color=white)](https://github.com/MehmetYukselSekeroglu/eye_of_web/stargazers)  
+    👤 **Open-source facial intelligence and face similarity search platform.**  
+    * **Installation**: `docker compose up --build`  
+    * **Key Capabilities**: InsightFace AntelopeV2 model generating 512-dim facial embeddings, Milvus vector database indexing for millisecond ANN search across billions of faces, and full local data custody.
+
+---
+
+## 🛠️ Investigation Architecture & Custom Stacks
+
+```mermaid
+flowchart TD
+    Target[("🎯 Investigation Target\n(Username / Email / Domain / Phone / Image)")]
+    
+    subgraph Passive_Recon["1. Passive Footprint Discovery"]
+        Sherlock["Sherlock / Maigret\n(400+ Platforms)"]
+        Holehe["Holehe\n(Email Validation)"]
+        PhoneInfoga["PhoneInfoga\n(Carrier & Line Telemetry)"]
+        Amass["OWASP Amass / theHarvester\n(Domain & DNS)"]
+    end
+
+    subgraph Deep_Correlation["2. Intelligence Correlation & Analysis"]
+        GHunt["GHunt\n(Google Footprints)"]
+        OpenSanctions["OpenSanctions\n(PEP & Sanctions Graph)"]
+        EyeOfWeb["EyeOfWeb\n(Vector Face Search)"]
+        SpiderFoot["SpiderFoot / OpenOSINT\n(Multi-source Correlation)"]
+    end
+
+    subgraph Visualization["3. Visual Link Analysis & Graph Synthesis"]
+        Maltego["Maltego Community / Pro\n(Graph Topology)"]
+        SocialLinks["Social Links\n(Dark Web & Social Nodes)"]
+    end
+
+    Target --> Passive_Recon
+    Passive_Recon --> Deep_Correlation
+    Deep_Correlation --> Visualization
+```
+
+---
+
+## 🤝 How to Contribute
+
+We actively welcome contributions from the OSINT, threat intelligence, and cybersecurity communities!
+
+1. 🍴 **Fork the repository**.
+2. 🌿 **Create a new branch**: `git checkout -b feature/add-osint-tool`.
+3. 📝 **Add or update the tool**:
+   * Add the link, description, and key capabilities.
+   * Ensure open-source entries include the proper Shields.io badge: `[![GitHub stars](https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white)](https://github.com/<owner>/<repo>/stargazers)`
+   * Verify commercial SaaS entries adhere to transparent pricing and verified company size metrics.
+4. 🚀 **Commit and submit a Pull Request** with a concise summary.
+
+---
+
+## ⚖️ Legal Compliance & Ethical Disclaimer
+
+> [!IMPORTANT]
+> **Lawful and Authorized Use Only**
+> This repository is maintained strictly for legitimate security research, asset defense, threat intelligence, law enforcement, and journalistic investigations.
+
+* **Ethical Boundaries**: Doxxing, harassment, unauthorized stalking, and violating individual privacy rights are illegal and unethical.
+* **Service Terms**: Scraping and automated querying may violate specific service Terms of Service (ToS); users must understand their local statutory jurisdictions (e.g., GDPR, CFAA, KVKK).
+* **Zero Liability**: The maintainers and contributors assume no liability for misuse of any tools or datasets listed herein. Always adhere to legal counsel and authorized rules of engagement.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Open-Source-Intelligence-Osint&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Open-Source-Intelligence-Osint&type=date&legend=top-left)
+
+---
+
+<div align="center">
+  <sub>Maintained with ❤️ by <a href="https://github.com/ishandutta2007">Ishan Dutta</a> and the Global Cybersecurity Community.</sub>
+</div>
